@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Muhammad Ejaz</title>
+  <meta name="description" content="Portfolio projects of Muhammad Ejaz, Frontend & WordPress Developer." />
+  <meta property="og:title" content="Portfolio | Muhammad Ejaz" />
+  <meta property="og:description" content="Selected projects by Muhammad Ejaz." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://example.com/portfolio.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/css/input.css" />
+</head>
+<body class="bg-bg text-text font-sans antialiased">
+
+  <header class="sticky top-0 z-50 bg-card/80 backdrop-blur border-b border-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-2 font-bold text-xl text-text">
+          <span class="w-9 h-9 rounded-lg bg-primary text-[#202631] flex items-center justify-center text-sm font-extrabold">ME</span>
+          <span>Muhammad Ejaz</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-muted">
+          <a href="index.html" class="hover:text-primary transition">Home</a>
+          <a href="about.html" class="hover:text-primary transition">About</a>
+          <a href="portfolio.html" class="text-primary">Portfolio</a>
+          <a href="services.html" class="hover:text-primary transition">Services</a>
+          <a href="resume.html" class="hover:text-primary transition">Resume</a>
+          <a href="contact.html" class="hover:text-primary transition">Contact</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a href="contact.html" class="hidden sm:inline-flex px-4 py-2 rounded-lg bg-primary text-[#202631] text-sm font-semibold hover:bg-secondary transition">Hire Me</a>
+          <button id="menuBtn" class="md:hidden p-2 rounded-lg border border-border" aria-label="Toggle menu">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+      <nav id="mobileMenu" class="hidden md:hidden pb-4 flex flex-col gap-2 text-sm font-medium text-muted">
+        <a href="index.html" class="py-2 hover:text-primary">Home</a>
+        <a href="about.html" class="py-2 hover:text-primary">About</a>
+        <a href="portfolio.html" class="py-2 text-primary">Portfolio</a>
+        <a href="services.html" class="py-2 hover:text-primary">Services</a>
+        <a href="resume.html" class="py-2 hover:text-primary">Resume</a>
+        <a href="contact.html" class="py-2 hover:text-primary">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+    <p class="text-primary font-semibold mb-2">MY PORTFOLIO</p>
+    <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight max-w-3xl">Projects That Reflect My Skills & Creativity</h1>
+    <p class="text-muted mt-4 max-w-2xl leading-relaxed">Demonstration projects showcasing frontend and WordPress capabilities. (Sample projects â€” to be replaced with live work.)</p>
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="#projects" class="px-6 py-3 rounded-lg bg-primary text-[#202631] font-semibold hover:bg-secondary transition">Explore Projects</a>
+      <a href="contact.html" class="px-6 py-3 rounded-lg border border-border text-text font-semibold hover:border-primary hover:text-primary transition">Contact Me</a>
+    </div>
+  </section>
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-6">
+    <div class="flex flex-wrap gap-2" id="filters">
+      <button data-filter="all" class="filter-btn px-4 py-2 rounded-full bg-primary text-[#202631] text-sm font-medium">All Projects</button>
+      <button data-filter="wordpress" class="filter-btn px-4 py-2 rounded-full bg-accent text-primary text-sm font-medium">WordPress</button>
+      <button data-filter="frontend" class="filter-btn px-4 py-2 rounded-full bg-accent text-primary text-sm font-medium">Frontend Development</button>
+      <button data-filter="ecommerce" class="filter-btn px-4 py-2 rounded-full bg-accent text-primary text-sm font-medium">E-Commerce</button>
+      <button data-filter="ui" class="filter-btn px-4 py-2 rounded-full bg-accent text-primary text-sm font-medium">UI / Web Design</button>
+    </div>
+  </section>
+
+  <section id="projects" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="projectGrid">
+
+      <article class="project-card bg-card border border-border rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition" data-category="wordpress ui">
+        <img src="/assets/images/placeholders/project-corporate-placeholder.svg" alt="Corporate Business Website placeholder" class="w-full" loading="lazy" />
+        <div class="p-5">
+          <p class="text-xs text-muted">WordPress</p>
+          <h3 class="font-semibold mt-1">Corporate Business Website</h3>
+          <p class="text-sm text-muted mt-2">Professional responsive corporate website with services, about, and contact sections.</p>
+          <p class="text-xs text-muted mt-3">Technologies: WordPress, Elementor, Custom CSS</p>
+          <div class="flex flex-wrap gap-2 mt-3">
+            <span class="px-2 py-0.5 rounded bg-accent text-primary text-xs">WordPress</span>
+            <span class="px-2 py-0.5 rounded bg-accent text-primary text-xs">Elementor</span>
+            <span class="px-2 py-0.5 rounded bg-accent text-primary text-xs">Custom CSS</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card bg-card border border-border rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition" data-category="wordpress ecommerce ui">
+        <img src="/assets/images/placeholders/project-fashion-placeholder.svg" alt="Fashion E-Commerce Store placeholder" class="w-full" loading="lazy" />
+        <div class="p-5">
+          <p class="text-xs text-muted">WordPress</p>
+          <h3 class="font-semibold mt-1">Fashion E-Commerce Store</h3>
+          <p class="text-sm text-muted mt-2">Modern fashion store with product categories, product pages, and shopping experience.</p>
+          <p class="text-xs text-muted mt-3">Technologies: WordPress, WooCommerce, Elementor</p>
+          <div class="flex flex-wrap gap-2 mt-3">
+            <span class="px-2 py-0.5 rounded bg-accent text-primary text-xs">WordPress</span>
+            <span class="px-2 py-0.5 rounded bg-accent text-primary text-xs">WooCommerce</span>
+            <span class="px-2 py-0.5 rounded bg-accent text-primary text-xs">Elementor</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card bg-card border border-border rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition" data-category="wordpress ui">
+        <img src="/assets/images/placeholders/project-learning-placeholder.svg" alt="Online Learning Platform placeholder" class="w-full" loading="lazy" />
+        <div class="p-5">
+          <p class="text-xs text-muted">WordPress</p>
+          <h3 class="font-semibold mt-1">Online Learning Platform</h3>
+          <p class="text-sm text-muted mt-2">Educational website with course listings, instructor information, and learning sections.</p>
+          <p class="text-xs text-muted mt-3">Technologies: WordPress, Elementor, LMS Plugin</p>
+          <div class="flex flex-wrap gap-2 mt-3">
+            <span class="px-2 py-0.5 rounded bg-accent text-primary text-xs">WordPress</span>
+            <span class="px-2 py-0.5 rounded bg-accent text-primary text-xs">Elementor</span>
+            <span class="px-2 py-0.5 rounded bg-accent text-primary text-xs">LMS Plugin</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card bg-card border border-border rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition" data-category="wordpress ui">
+        <img src="/assets/images/placeholders/project-restaurant-placeholder.svg" alt="Restaurant and Cafe Website placeholder" class="w-full" loading="lazy" />
+        <div class="p-5">
+          <p class="text-xs text-muted">WordPress</p>
+          <h3 class="font-semibold mt-1">Restaurant & Cafe Website</h3>
+          <p class="text-sm text-muted mt-2">Modern restaurant website with menu, gallery, about, and contact/reservation sections.</p>
+          <p class="text-xs text-muted mt-3">Technologies: WordPress, Custom Theme, HTML, CSS</p>
+          <div class="flex flex-wrap gap-2 mt-3">
+            <span class="px-2 py-0.5 rounded bg-accent text-primary text-xs">WordPress</span>
+            <span class="px-2 py-0.5 rounded bg-accent text-primary text-xs">Custom Theme</span>
+            <span class="px-2 py-0.5 rounded bg-accent text-primary text-xs">HTML/CSS</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card bg-card border border-border rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition" data-category="frontend ui">
+        <img src="/assets/images/placeholders/project-saas-placeholder.svg" alt="SaaS Business Landing Page placeholder" class="w-full" loading="lazy" />
+        <div class="p-5">
+          <p class="text-xs text-muted">Frontend</p>
+          <h3 class="font-semibold mt-1">SaaS Business Landing Page</h3>
+          <p class="text-sm text-muted mt-2">Responsive SaaS landing page with features, pricing, and interactive UI components.</p>
+          <p class="text-xs text-muted mt-3">Technologies: HTML5, CSS3, JavaScript</p>
+          <div class="flex flex-wrap gap-2 mt-3">
+            <span class="px-2 py-0.5 rounded bg-accent text-primary text-xs">HTML5</span>
+            <span class="px-2 py-0.5 rounded bg-accent text-primary text-xs">CSS3</span>
+            <span class="px-2 py-0.5 rounded bg-accent text-primary text-xs">JavaScript</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card bg-card border border-border rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition" data-category="frontend ecommerce ui">
+        <img src="/assets/images/placeholders/project-ecommerce-placeholder.svg" alt="Modern E-Commerce Frontend placeholder" class="w-full" loading="lazy" />
+        <div class="p-5">
+          <p class="text-xs text-muted">Frontend</p>
+          <h3 class="font-semibold mt-1">Modern E-Commerce Frontend</h3>
+          <p class="text-sm text-muted mt-2">Modern shopping frontend with product cards, category filtering, and interactive cart UI.</p>
+          <p class="text-xs text-muted mt-3">Technologies: HTML5, CSS3, Tailwind CSS, JavaScript</p>
+          <div class="flex flex-wrap gap-2 mt-3">
+            <span class="px-2 py-0.5 rounded bg-accent text-primary text-xs">HTML5</span>
+            <span class="px-2 py-0.5 rounded bg-accent text-primary text-xs">Tailwind</span>
+            <span class="px-2 py-0.5 rounded bg-accent text-primary text-xs">JavaScript</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="bg-section py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold">Have a Project in Mind?</h2>
+      <p class="text-muted mt-3">Let's collaborate and build something great.</p>
+      <div class="mt-6">
+        <a href="contact.html" class="px-6 py-3 rounded-lg bg-primary text-[#202631] font-semibold hover:bg-secondary transition">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-card border-t border-border mt-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid md:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-center gap-2 font-bold text-lg">
+          <span class="w-8 h-8 rounded-lg bg-primary text-[#202631] flex items-center justify-center text-xs font-extrabold">ME</span>
+          <span>Muhammad Ejaz</span>
+        </div>
+        <p class="text-sm text-muted mt-3">Frontend & WordPress Developer based in Islamabad, Pakistan.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">Quick Links</h4>
+        <ul class="space-y-2 text-sm text-muted">
+          <li><a href="index.html" class="hover:text-primary">Home</a></li>
+          <li><a href="about.html" class="hover:text-primary">About</a></li>
+          <li><a href="portfolio.html" class="hover:text-primary">Portfolio</a></li>
+          <li><a href="services.html" class="hover:text-primary">Services</a></li>
+          <li><a href="resume.html" class="hover:text-primary">Resume</a></li>
+          <li><a href="contact.html" class="hover:text-primary">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">Connect</h4>
+        <ul class="space-y-2 text-sm text-muted">
+          <li><a href="https://github.com/mejazsds-dev" target="_blank" rel="noopener noreferrer" class="hover:text-primary">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/muhammad-ejaz-dev" target="_blank" rel="noopener noreferrer" class="hover:text-primary">LinkedIn</a></li>
+          <li><a </li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-border py-4 text-center text-xs text-muted">
+      Â© 2026 Muhammad Ejaz. All rights reserved.
+    </div>
+  </footer>
+
+  <script type="module" src="/src/js/main.js"></script>
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.project-card');
+    filterBtns.forEach(b => b.addEventListener('click', () => {
+      const f = b.dataset.filter;
+      filterBtns.forEach(x => { x.classList.remove('bg-primary','text-white'); x.classList.add('bg-accent','text-primary'); });
+      b.classList.remove('bg-accent','text-primary'); b.classList.add('bg-primary','text-white');
+      cards.forEach(c => {
+        const cats = c.dataset.category.split(' ');
+        c.style.display = (f === 'all' || cats.includes(f)) ? '' : 'none';
+      });
+    }));
+  </script>
+</body>
+</html>

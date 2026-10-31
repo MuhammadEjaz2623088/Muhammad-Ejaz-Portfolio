@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Muhammad Ejaz</title>
+  <meta name="description" content="About Muhammad Ejaz, Frontend & WordPress Developer based in Islamabad, Pakistan." />
+  <meta property="og:title" content="About | Muhammad Ejaz" />
+  <meta property="og:description" content="Learn about Muhammad Ejaz, Frontend & WordPress Developer." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://example.com/about.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/css/input.css" />
+</head>
+<body class="bg-bg text-text font-sans antialiased">
+
+  <header class="sticky top-0 z-50 bg-card/80 backdrop-blur border-b border-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-2 font-bold text-xl text-text">
+          <span class="w-9 h-9 rounded-lg bg-primary text-[#202631] flex items-center justify-center text-sm font-extrabold">ME</span>
+          <span>Muhammad Ejaz</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-muted">
+          <a href="index.html" class="hover:text-primary transition">Home</a>
+          <a href="about.html" class="text-primary">About</a>
+          <a href="portfolio.html" class="hover:text-primary transition">Portfolio</a>
+          <a href="services.html" class="hover:text-primary transition">Services</a>
+          <a href="resume.html" class="hover:text-primary transition">Resume</a>
+          <a href="contact.html" class="hover:text-primary transition">Contact</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a href="contact.html" class="hidden sm:inline-flex px-4 py-2 rounded-lg bg-primary text-[#202631] text-sm font-semibold hover:bg-secondary transition">Hire Me</a>
+          <button id="menuBtn" class="md:hidden p-2 rounded-lg border border-border" aria-label="Toggle menu">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+      <nav id="mobileMenu" class="hidden md:hidden pb-4 flex flex-col gap-2 text-sm font-medium text-muted">
+        <a href="index.html" class="py-2 hover:text-primary">Home</a>
+        <a href="about.html" class="py-2 text-primary">About</a>
+        <a href="portfolio.html" class="py-2 hover:text-primary">Portfolio</a>
+        <a href="services.html" class="py-2 hover:text-primary">Services</a>
+        <a href="resume.html" class="py-2 hover:text-primary">Resume</a>
+        <a href="contact.html" class="py-2 hover:text-primary">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Hero -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+    <div class="grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <p class="text-primary font-semibold mb-2">About Me</p>
+        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">Muhammad Ejaz</h1>
+        <p class="text-xl text-muted mt-2 font-medium">Frontend & WordPress Developer</p>
+        <p class="text-muted mt-6 leading-relaxed max-w-xl">
+          I am a Frontend & WordPress Developer based in Islamabad, Pakistan, currently working at Sigma Digital Solution. I build responsive, accessible, and maintainable websites with clean code and modern tooling.
+        </p>
+      </div>
+      <div class="relative">
+        <div class="absolute -top-6 -left-6 hidden sm:block w-24 h-24 rounded-2xl bg-accent"></div>
+        <div class="absolute -bottom-6 -right-6 hidden sm:block w-32 h-32 rounded-2xl bg-accent"></div>
+        <div class="relative bg-card border border-border rounded-2xl shadow-lg p-3">
+          <img src="/assets/images/placeholders/profile-placeholder.svg" alt="Muhammad Ejaz profile placeholder" class="w-full rounded-xl object-cover profile-img" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Personal Introduction -->
+  <section class="bg-section py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold">Personal Introduction</h2>
+      <div class="grid md:grid-cols-2 gap-8 mt-8">
+        <div class="bg-card border border-border rounded-2xl p-6 shadow-sm">
+          <p class="text-muted leading-relaxed">Name: Muhammad Ejaz</p>
+          <p class="text-muted leading-relaxed mt-2">Role: Frontend & WordPress Developer</p>
+          <p class="text-muted leading-relaxed mt-2">Location: Islamabad, Pakistan</p>
+          <p class="text-muted leading-relaxed mt-4">I focus on building responsive, accessible, and maintainable websites with clean code and modern tooling.</p>
+        </div>
+        <div class="bg-card border border-border rounded-2xl p-6 shadow-sm">
+          <h3 class="font-semibold mb-3">Professional Biography</h3>
+          <p class="text-muted leading-relaxed text-sm">[Edit] Add your detailed professional biography here. Keep it factual and verified.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Journey -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <h2 class="text-3xl font-bold">Professional Journey</h2>
+    <div class="grid md:grid-cols-3 gap-6 mt-8">
+      <div class="bg-card border border-border rounded-2xl p-6 shadow-sm">
+        <h3 class="font-semibold">Frontend Development</h3>
+        <p class="text-sm text-muted mt-2">Building responsive interfaces with HTML, CSS, Tailwind, and JavaScript.</p>
+      </div>
+      <div class="bg-card border border-border rounded-2xl p-6 shadow-sm">
+        <h3 class="font-semibold">WordPress Development</h3>
+        <p class="text-sm text-muted mt-2">Custom themes, plugins, and Elementor-based solutions.</p>
+      </div>
+      <div class="bg-card border border-border rounded-2xl p-6 shadow-sm">
+        <h3 class="font-semibold">Professional Growth</h3>
+        <p class="text-sm text-muted mt-2">Continuously learning and improving development practices.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience -->
+  <section class="bg-section py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold">Work Experience</h2>
+      <div class="bg-card border border-border rounded-2xl p-6 shadow-sm mt-8">
+        <h3 class="font-semibold text-lg">Frontend Web Developer</h3>
+        <p class="text-primary text-sm font-medium mt-1">Sigma Digital Solution â€” Islamabad, Pakistan</p>
+        <p class="text-muted text-sm mt-1">October 2025 â€“ Present</p>
+        <ul class="mt-4 space-y-2 text-sm text-muted list-disc list-inside">
+          <li>Develop and maintain responsive web interfaces.</li>
+          <li>Collaborate on frontend implementation tasks.</li>
+          <li>Work with HTML, CSS, JavaScript, and WordPress.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <h2 class="text-3xl font-bold">Technical Skills</h2>
+    <div class="flex flex-wrap gap-2 mt-8">
+      <span class="px-3 py-1 rounded-full bg-accent text-primary text-xs font-medium">HTML5</span>
+      <span class="px-3 py-1 rounded-full bg-accent text-primary text-xs font-medium">CSS3</span>
+      <span class="px-3 py-1 rounded-full bg-accent text-primary text-xs font-medium">JavaScript</span>
+      <span class="px-3 py-1 rounded-full bg-accent text-primary text-xs font-medium">Tailwind CSS</span>
+      <span class="px-3 py-1 rounded-full bg-accent text-primary text-xs font-medium">Bootstrap</span>
+      <span class="px-3 py-1 rounded-full bg-accent text-primary text-xs font-medium">WordPress</span>
+      <span class="px-3 py-1 rounded-full bg-accent text-primary text-xs font-medium">Elementor</span>
+      <span class="px-3 py-1 rounded-full bg-accent text-primary text-xs font-medium">Theme Customization</span>
+      <span class="px-3 py-1 rounded-full bg-accent text-primary text-xs font-medium">Plugin Customization</span>
+      <span class="px-3 py-1 rounded-full bg-accent text-primary text-xs font-medium">Git</span>
+      <span class="px-3 py-1 rounded-full bg-accent text-primary text-xs font-medium">GitHub</span>
+      <span class="px-3 py-1 rounded-full bg-accent text-primary text-xs font-medium">VS Code</span>
+      <span class="px-3 py-1 rounded-full bg-accent text-primary text-xs font-medium">Browser DevTools</span>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="bg-section py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold">Education</h2>
+      <div class="bg-card border border-border rounded-2xl p-6 shadow-sm mt-8">
+        <p class="text-muted text-sm">Qualification: F.Sc (Pre-Engineering)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Strengths -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <h2 class="text-3xl font-bold">Professional Strengths</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+      <div class="bg-card border border-border rounded-2xl p-6 shadow-sm text-center">Responsibility</div>
+      <div class="bg-card border border-border rounded-2xl p-6 shadow-sm text-center">Teamwork</div>
+      <div class="bg-card border border-border rounded-2xl p-6 shadow-sm text-center">Honesty</div>
+      <div class="bg-card border border-border rounded-2xl p-6 shadow-sm text-center">Continuous Learning</div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-section py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold">Let's Work Together</h2>
+      <p class="text-muted mt-3">Discuss your next project with me.</p>
+      <div class="mt-6 flex flex-wrap justify-center gap-3">
+        <a href="contact.html" class="px-6 py-3 rounded-lg bg-primary text-[#202631] font-semibold hover:bg-secondary transition">Contact Me</a>
+        <a href="portfolio.html" class="px-6 py-3 rounded-lg border border-border text-text font-semibold hover:border-primary hover:text-primary transition">View Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-card border-t border-border mt-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid md:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-center gap-2 font-bold text-lg">
+          <span class="w-8 h-8 rounded-lg bg-primary text-[#202631] flex items-center justify-center text-xs font-extrabold">ME</span>
+          <span>Muhammad Ejaz</span>
+        </div>
+        <p class="text-sm text-muted mt-3">Frontend & WordPress Developer based in Islamabad, Pakistan.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">Quick Links</h4>
+        <ul class="space-y-2 text-sm text-muted">
+          <li><a href="index.html" class="hover:text-primary">Home</a></li>
+          <li><a href="about.html" class="hover:text-primary">About</a></li>
+          <li><a href="portfolio.html" class="hover:text-primary">Portfolio</a></li>
+          <li><a href="services.html" class="hover:text-primary">Services</a></li>
+          <li><a href="resume.html" class="hover:text-primary">Resume</a></li>
+          <li><a href="contact.html" class="hover:text-primary">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">Connect</h4>
+        <ul class="space-y-2 text-sm text-muted">
+          <li><a href="https://github.com/mejazsds-dev" target="_blank" rel="noopener noreferrer" class="hover:text-primary">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/muhammad-ejaz-dev" target="_blank" rel="noopener noreferrer" class="hover:text-primary">LinkedIn</a></li>
+          <li><a </li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-border py-4 text-center text-xs text-muted">
+      Â© 2026 Muhammad Ejaz. All rights reserved.
+    </div>
+  </footer>
+
+  <script type="module" src="/src/js/main.js"></script>
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+  </script>
+</body>
+</html>

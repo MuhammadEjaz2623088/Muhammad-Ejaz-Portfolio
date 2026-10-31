@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Muhammad Ejaz</title>
+  <meta name="description" content="Contact Muhammad Ejaz, Frontend & WordPress Developer." />
+  <meta property="og:title" content="Contact | Muhammad Ejaz" />
+  <meta property="og:description" content="Get in touch with Muhammad Ejaz." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://example.com/contact.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/css/input.css" />
+</head>
+<body class="bg-bg text-text font-sans antialiased">
+
+  <header class="sticky top-0 z-50 bg-card/80 backdrop-blur border-b border-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-2 font-bold text-xl text-text">
+          <span class="w-9 h-9 rounded-lg bg-primary text-[#202631] flex items-center justify-center text-sm font-extrabold">ME</span>
+          <span>Muhammad Ejaz</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-muted">
+          <a href="index.html" class="hover:text-primary transition">Home</a>
+          <a href="about.html" class="hover:text-primary transition">About</a>
+          <a href="portfolio.html" class="hover:text-primary transition">Portfolio</a>
+          <a href="services.html" class="hover:text-primary transition">Services</a>
+          <a href="resume.html" class="hover:text-primary transition">Resume</a>
+          <a href="contact.html" class="text-primary">Contact</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a href="contact.html" class="hidden sm:inline-flex px-4 py-2 rounded-lg bg-primary text-[#202631] text-sm font-semibold hover:bg-secondary transition">Hire Me</a>
+          <button id="menuBtn" class="md:hidden p-2 rounded-lg border border-border" aria-label="Toggle menu">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+      <nav id="mobileMenu" class="hidden md:hidden pb-4 flex flex-col gap-2 text-sm font-medium text-muted">
+        <a href="index.html" class="py-2 hover:text-primary">Home</a>
+        <a href="about.html" class="py-2 hover:text-primary">About</a>
+        <a href="portfolio.html" class="py-2 hover:text-primary">Portfolio</a>
+        <a href="services.html" class="py-2 hover:text-primary">Services</a>
+        <a href="resume.html" class="py-2 hover:text-primary">Resume</a>
+        <a href="contact.html" class="py-2 text-primary">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+    <p class="text-primary font-semibold mb-2">GET IN TOUCH</p>
+    <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight max-w-3xl">Let's Work Together</h1>
+    <p class="text-muted mt-4 max-w-2xl leading-relaxed">Have a project in mind or looking for a frontend and WordPress developer? Feel free to get in touch. I'd be happy to discuss your ideas.</p>
+  </section>
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 grid lg:grid-cols-2 gap-10">
+    <!-- Contact info -->
+    <div class="space-y-4">
+      <div class="bg-card border border-border rounded-2xl p-6 shadow-sm">
+        <p class="text-sm text-muted">Email</p>
+        <a href="mailto:muhammadejaz2623088@gmail.com" class="text-primary font-semibold break-all">muhammadejaz2623088@gmail.com</a>
+      </div>
+      <div class="bg-card border border-border rounded-2xl p-6 shadow-sm">
+        <p class="text-sm text-muted">Location</p>
+        <p class="font-semibold">Islamabad, Pakistan</p>
+      </div>
+      <div class="bg-card border border-border rounded-2xl p-6 shadow-sm">
+        <p class="text-sm text-muted">GitHub</p>
+        <a href="https://github.com/mejazsds-dev" target="_blank" rel="noopener noreferrer" class="text-primary font-semibold break-all">github.com/mejazsds-dev</a>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="bg-card border border-border rounded-2xl p-6 shadow-sm">
+      <form id="contactForm" novalidate class="space-y-4">
+        <div>
+          <label for="name" class="block text-sm font-medium mb-1">Full Name</label>
+          <input id="name" name="name" type="text" required class="w-full px-4 py-2 rounded-lg border border-border focus:outline-none focus:border-primary" />
+          <p class="text-xs text-red-600 mt-1 hidden" data-error="name"></p>
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium mb-1">Email Address</label>
+          <input id="email" name="email" type="email" required class="w-full px-4 py-2 rounded-lg border border-border focus:outline-none focus:border-primary" />
+          <p class="text-xs text-red-600 mt-1 hidden" data-error="email"></p>
+        </div>
+        <div>
+          <label for="subject" class="block text-sm font-medium mb-1">Subject</label>
+          <input id="subject" name="subject" type="text" required class="w-full px-4 py-2 rounded-lg border border-border focus:outline-none focus:border-primary" />
+          <p class="text-xs text-red-600 mt-1 hidden" data-error="subject"></p>
+        </div>
+        <div>
+          <label for="projectType" class="block text-sm font-medium mb-1">Project Type</label>
+          <select id="projectType" name="projectType" required class="w-full px-4 py-2 rounded-lg border border-border focus:outline-none focus:border-primary">
+            <option value="">Select a type</option>
+            <option>Frontend Web Development</option>
+            <option>WordPress Development</option>
+            <option>Elementor Website Design</option>
+            <option>E-Commerce Website</option>
+            <option>Website Redesign</option>
+            <option>Other</option>
+          </select>
+          <p class="text-xs text-red-600 mt-1 hidden" data-error="projectType"></p>
+        </div>
+        <div>
+          <label for="message" class="block text-sm font-medium mb-1">Message</label>
+          <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 rounded-lg border border-border focus:outline-none focus:border-primary"></textarea>
+          <p class="text-xs text-red-600 mt-1 hidden" data-error="message"></p>
+        </div>
+        <button type="submit" class="w-full px-6 py-3 rounded-lg bg-primary text-[#202631] font-semibold hover:bg-secondary transition">Submit Message</button>
+        <p id="formStatus" class="text-sm hidden"></p>
+        <p class="text-xs text-muted">Note: This form is a frontend demo. No message is sent until backend/email integration is added.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="bg-section py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold">Let's Build Something Great Together</h2>
+      <p class="text-muted mt-3">I'm open to new opportunities and collaborations.</p>
+      <div class="mt-6">
+        <a href="mailto:muhammadejaz2623088@gmail.com" class="px-6 py-3 rounded-lg bg-primary text-[#202631] font-semibold hover:bg-secondary transition">Email Me</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-card border-t border-border mt-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid md:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-center gap-2 font-bold text-lg">
+          <span class="w-8 h-8 rounded-lg bg-primary text-[#202631] flex items-center justify-center text-xs font-extrabold">ME</span>
+          <span>Muhammad Ejaz</span>
+        </div>
+        <p class="text-sm text-muted mt-3">Frontend & WordPress Developer based in Islamabad, Pakistan.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">Quick Links</h4>
+        <ul class="space-y-2 text-sm text-muted">
+          <li><a href="index.html" class="hover:text-primary">Home</a></li>
+          <li><a href="about.html" class="hover:text-primary">About</a></li>
+          <li><a href="portfolio.html" class="hover:text-primary">Portfolio</a></li>
+          <li><a href="services.html" class="hover:text-primary">Services</a></li>
+          <li><a href="resume.html" class="hover:text-primary">Resume</a></li>
+          <li><a href="contact.html" class="hover:text-primary">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">Connect</h4>
+        <ul class="space-y-2 text-sm text-muted">
+          <li><a href="https://github.com/mejazsds-dev" target="_blank" rel="noopener noreferrer" class="hover:text-primary">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/muhammad-ejaz-dev" target="_blank" rel="noopener noreferrer" class="hover:text-primary">LinkedIn</a></li>
+          <li><a </li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-border py-4 text-center text-xs text-muted">
+      Â© 2026 Muhammad Ejaz. All rights reserved.
+    </div>
+  </footer>
+
+  <script type="module" src="/src/js/main.js"></script>
+  <script type="module" src="/src/js/contact.js"></script>
+</body>
+</html>

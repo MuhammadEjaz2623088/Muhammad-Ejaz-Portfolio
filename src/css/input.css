@@ -1,0 +1,19 @@
+﻿@import "tailwindcss";
+
+@theme {
+  --color-primary: #D6B36A;
+  --color-secondary: #E8CB91;
+  --color-bg: #202631;
+  --color-section: #28313E;
+  --color-card: #303B49;
+  --color-text: #F5F1E8;
+  --color-muted: #AEB7C2;
+  --color-border: #46515F;
+  --color-accent: #374353;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --radius-card: 1rem;
+}
+
+@import './style.css';
+@import './components.css';
+@import './responsive.css';

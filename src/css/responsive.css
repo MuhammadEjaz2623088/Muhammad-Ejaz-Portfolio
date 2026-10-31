@@ -1,0 +1,19 @@
+﻿img, svg { max-width: 100%; height: auto; }
+* { box-sizing: border-box; }
+
+.profile-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .profile-img {
+    max-width: 260px;
+    max-height: 260px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
